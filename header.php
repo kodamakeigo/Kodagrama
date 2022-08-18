@@ -16,5 +16,15 @@
 </head>
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-	<header>ヘッダー</header>
+	<header>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" width="245" height="160" loading="eager">
+		</a>
+		<?php
+		wp_nav_menu( array(
+			'container'       => 'nav',
+			'container_class' => 'global-nav',
+			'theme_location' => 'primary'
+		) ); ?>
+	</header>
 			<main>
