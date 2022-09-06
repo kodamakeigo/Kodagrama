@@ -212,7 +212,8 @@ add_action( 'widgets_init', 'theme_widgets_init' );
  * @since 1.0.0
  */
 function theme_scripts() {
-	$version = wp_get_theme()->get( 'Version' );
+	// $version = wp_get_theme()->get( 'Version' );
+	$version = time();
 
 	wp_deregister_script( 'jquery' );
 	wp_deregister_script( 'jquery-migrate' );
