@@ -1,0 +1,14 @@
+<dl class="contact-form">
+	<dt>お問い合わせ項目<span class="icon-required">必須</span></dt>
+	<dd>
+		[radio contact-type use_label_element default:1 "お仕事について"
+		"デザインについて" "イラストについて" "その他"]
+	</dd>
+	<dt>会社名／団体名<span class="icon-optional">任意</span></dt>
+	<dd>[text contact-company placeholder "例）〇〇株式会社"]</dd>
+	<dt>メールアドレス<span class="icon-required">必須</span></dt>
+	<dd>[email* contact-email placeholder "例）info@example.com"]</dd>
+	<dt>お問い合わせ内容<span class="icon-required">必須</span></dt>
+	<dd>[textarea* contact-textarea]</dd>
+</dl>
+<nav>[submit "送信"]</nav>
