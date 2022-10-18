@@ -46,4 +46,8 @@ get_header(); ?>
     </ul>
 </section>
 
+<section>
+    <h2>Contact</h2>
+    <?php echo do_shortcode('[contact-form-7 id="17" title="お問い合わせフォーム"]'); ?>
+</section>
 <?php get_footer();
