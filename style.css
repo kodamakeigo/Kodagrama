@@ -366,6 +366,10 @@ template {
 * Common
 */
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background: #fef6e4;
 	color: #001858;
@@ -493,3 +497,63 @@ a:hover {
 .bx-viewport {
 	overflow: visible !important;
 }
+
+/* Contact */
+
+.contact-form {
+	color: #14171a;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 0 auto;
+	width: 500px;
+}
+
+.wpcf7-form-control-wrap {
+	margin-bottom: 10px;
+}
+
+.icon-required,
+.icon-optional {
+	border-radius: 20px;
+	letter-spacing: 0.1em;
+	margin: 0 0 0 10px;
+	padding: 5px 10px;
+}
+
+.icon-required {
+	background-color: #68ade0;
+}
+
+.icon-optional {
+	background-color: #beb8b8;
+}
+
+.contact-form dt {
+	line-height: 30px;
+	margin: 0 0 10px 0;
+}
+
+.contact-form dd {
+	line-height: 30px;
+	margin:0 0 20px 0;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email'] {
+	line-height: 24px;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form textarea {
+	width: 500px;
+}
+
+.contact-form .wpcf7-list-item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.wpcf7-form-control-wrap {
+	
