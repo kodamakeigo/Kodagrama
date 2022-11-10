@@ -9,7 +9,9 @@
  */
 ?>
 </main>
-<footer>フッター</footer>
+<footer>
+    <a href="#">ページトップへ</a>
+</footer>
 <?php wp_footer(); ?>
 </body>
 

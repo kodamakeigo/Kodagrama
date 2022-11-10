@@ -370,9 +370,11 @@ template {
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	background: #fef6e4;
-	color: #001858;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -402,15 +404,10 @@ a:hover {
 .header {
 	background: #fffbf4;
 	box-shadow: 0 5px 6px 0 #a2a1a1;
-}
-
-.header-inner {
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
-	max-width: 1180px;
-	margin: 0 auto;
-	padding: 10px 0;
+	height: 100px;
+	position: fixed;
+	width: 100%;
+	z-index: 10000;
 }
 
 .global-nav .menu {
@@ -449,6 +446,11 @@ a:hover {
 /**
 * Contents
 */
+
+.main-contents {
+	padding: 100px 0 0;
+}
+
 /*Eyecatch */
 
 .section-eyecatch {
@@ -498,6 +500,10 @@ a:hover {
 	overflow: visible !important;
 }
 
+.home-about-list-wrap {
+	overflow: hidden;
+}
+
 /* Contact */
 
 .contact-form {
@@ -506,10 +512,6 @@ a:hover {
 	font-weight: bold;
 	margin: 0 auto;
 	width: 500px;
-}
-
-.wpcf7-form-control-wrap {
-	margin-bottom: 10px;
 }
 
 .icon-required,
@@ -522,6 +524,7 @@ a:hover {
 
 .icon-required {
 	background-color: #68ade0;
+	color: #fcf7f8;
 }
 
 .icon-optional {
@@ -535,7 +538,7 @@ a:hover {
 
 .contact-form dd {
 	line-height: 30px;
-	margin:0 0 20px 0;
+	margin: 0 0 20px 0;
 }
 
 .contact-form input[type='text'],
@@ -555,5 +558,35 @@ a:hover {
 	margin-bottom: 10px;
 }
 
-.wpcf7-form-control-wrap {
-	
+/**
+* PC Styles
+============================*/
+
+@media screen and (min-width: 768px) {
+	body {
+		background: #fef6e4;
+		color: #001858;
+	}
+	.header-inner {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		max-width: 1180px;
+		margin: 0 auto;
+		padding: 10px 0;
+	}
+}
+
+/**
+* SP Styles
+============================*/
+
+@media screen and (max-width: 767px) {
+	body {
+		background: #01133a;
+		color: #fef6e4;
+	}
+	.header-inner {
+		display: none;
+	}
+}

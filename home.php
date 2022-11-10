@@ -12,7 +12,10 @@ get_header(); ?>
 
 <section class="section-eyecatch">
     <figure class="section-eyecatch-img">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/eyecatch.png" alt="Kodagrama" width="872" height="697" loading="eager">
+        <picture>
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/eyecatch-sp.png" media="(max-width: 767px)">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/eyecatch.png" alt="Kodagrama" width="872" height="697" loading="eager">
+        </picture>
     </figure>
     <div class="section-eyecatch-text">
         <h2 class="section-eyecatch-title">K.Kodama<br><span class="section-eyecatch-title-sub">Portfolio</span></h2>
@@ -26,24 +29,26 @@ get_header(); ?>
 
 <section>
     <h2>About</h2>
-    <ul id="js-home-about-list" class="home-about-list">
-        <li>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/fishing_ill.png" alt="釣りのイラスト" width="280" height="347" loading="eager">
-            <span>釣りが好き</span>
-        </li>
-        <li>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/fishing_ill.png" alt="釣りのイラスト" width="280" height="347" loading="eager">
-            <span>釣りが好き</span>
-        </li>
-        <li>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/fishing_ill.png" alt="釣りのイラスト" width="280" height="347" loading="eager">
-            <span>釣りが好き</span>
-        </li>
-        <li>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/fishing_ill.png" alt="釣りのイラスト" width="280" height="347" loading="eager">
-            <span>釣りが好き</span>
-        </li>
-    </ul>
+    <div class="home-about-list-wrap">
+        <ul id="js-home-about-list" class="home-about-list">
+            <li>
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/fishing_ill.png" alt="釣りのイラスト" width="280" height="347" loading="eager">
+                <span>釣りが好き</span>
+            </li>
+            <li>
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/fishing_ill.png" alt="釣りのイラスト" width="280" height="347" loading="eager">
+                <span>釣りが好き</span>
+            </li>
+            <li>
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/fishing_ill.png" alt="釣りのイラスト" width="280" height="347" loading="eager">
+                <span>釣りが好き</span>
+            </li>
+            <li>
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/fishing_ill.png" alt="釣りのイラスト" width="280" height="347" loading="eager">
+                <span>釣りが好き</span>
+            </li>
+        </ul>
+    </div>
 </section>
 
 <section>
