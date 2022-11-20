@@ -397,6 +397,10 @@ a:hover {
 	text-decoration: underline;
 }
 
+h2 {
+	font-size: 40px;
+}
+
 /**
 * Header
 */
@@ -502,6 +506,49 @@ a:hover {
 
 .home-about-list-wrap {
 	overflow: hidden;
+}
+
+/* Works */
+
+.home-works-list {
+	margin: 0 30px;
+	padding: 0;
+}
+
+.familycard_wrap,
+.maicard_wrap,
+.kscard_wrap {
+	width: 30vw;
+}
+
+.familycard_flont,
+.familycard_back,
+.maicard_flont,
+.kscard_flont,
+.kscard_back {
+	display: block;
+	margin: 0 auto 20px;
+	width: 28vw;
+}
+
+.home-works-list li {
+	font-size: 30px;
+	font-weight: bold;
+	list-style: none;
+	margin: 0 0 20px 0;
+}
+
+.familycard_wrap p,
+.maicard_wrap p,
+.kscard_wrap p {
+	font-size: 20px;
+	width: 28vw;
+	margin: 0 auto;
+}
+
+.home-works-list {
+	display: flex;
+	justify-content: space-around;
 }
 
 /* Contact */
