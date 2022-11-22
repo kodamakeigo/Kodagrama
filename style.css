@@ -397,10 +397,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-h2 {
-	font-size: 40px;
-}
-
 /**
 * Header
 */
@@ -450,6 +446,12 @@ h2 {
 /**
 * Contents
 */
+
+.title-home {
+	font-size: 40px;
+	text-align: center;
+	margin: 0 0 40px 0;
+}
 
 .main-contents {
 	padding: 100px 0 0;
@@ -515,20 +517,14 @@ h2 {
 	padding: 0;
 }
 
-.familycard_wrap,
-.maicard_wrap,
-.kscard_wrap {
-	width: 30vw;
+.card_wrap {
+	width: 28vw;
 }
 
-.familycard_flont,
-.familycard_back,
-.maicard_flont,
-.kscard_flont,
-.kscard_back {
+.crad_img {
 	display: block;
-	margin: 0 auto 20px;
-	width: 28vw;
+	margin: 0 0 20px 0;
+	width: 100%;
 }
 
 .home-works-list li {
@@ -538,12 +534,9 @@ h2 {
 	margin: 0 0 20px 0;
 }
 
-.familycard_wrap p,
-.maicard_wrap p,
-.kscard_wrap p {
+.card_wrap p {
 	font-size: 20px;
-	width: 28vw;
-	margin: 0 auto;
+	margin: 0;
 }
 
 .home-works-list {
