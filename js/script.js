@@ -1,4 +1,6 @@
 $(function () {
+	'use strict';
+
 	let slideWidthValue = Number($(window).width() / 3);
 	$('#js-home-about-list').bxSlider({
 		maxSlides: 3,
