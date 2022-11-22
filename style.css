@@ -626,7 +626,22 @@ a:hover {
 		background: #01133a;
 		color: #fef6e4;
 	}
-	.header-inner {
+	.global-nav {
 		display: none;
+	}
+
+	/**
+	* Menu
+	*/
+
+	.hamburger-menu {
+		background: #fff;
+		display: none;
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
 	}
 }

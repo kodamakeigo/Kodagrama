@@ -63,6 +63,23 @@
 				'container_class' => 'global-nav',
 				'theme_location' => 'primary'
 			)); ?>
+
+			<nav class="hamburger-btn">
+				<button>
+					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/menu-btn.svg" alt="メニュー" width="100" height="116" loading="eager">
+				</button>
+			</nav>
+			<nav class="hamburger-menu">
+				<button>
+					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/menu-btn-close.svg" alt="閉じる" width="90" height="102" loading="lazy">
+				</button>
+				<?php
+				wp_nav_menu(array(
+					'container'       => 'div',
+					'container_class' => 'global-nav-sp',
+					'theme_location' => 'primary'
+				)); ?>
+			</nav>
 		</div>
 	</header>
 	<main class="main-contents">
