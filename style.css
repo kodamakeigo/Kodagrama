@@ -447,6 +447,12 @@ a:hover {
 * Contents
 */
 
+.title-home {
+	font-size: 40px;
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+
 .main-contents {
 	padding: 100px 0 0;
 }
@@ -502,6 +508,40 @@ a:hover {
 
 .home-about-list-wrap {
 	overflow: hidden;
+}
+
+/* Works */
+
+.home-works-list {
+	margin: 0 30px;
+	padding: 0;
+}
+
+.card_wrap {
+	width: 28vw;
+}
+
+.crad_img {
+	display: block;
+	margin: 0 0 20px 0;
+	width: 100%;
+}
+
+.home-works-list li {
+	font-size: 30px;
+	font-weight: bold;
+	list-style: none;
+	margin: 0 0 20px 0;
+}
+
+.card_wrap p {
+	font-size: 20px;
+	margin: 0;
+}
+
+.home-works-list {
+	display: flex;
+	justify-content: space-around;
 }
 
 /* Contact */
