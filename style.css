@@ -442,6 +442,9 @@ a:hover {
 /**
 * Footer
 */
+.footer_back {
+	width: 100vw;
+}
 
 /**
 * Contents
@@ -462,6 +465,7 @@ a:hover {
 .section-eyecatch {
 	align-items: center;
 	display: flex;
+	margin: 0 0 20px 0;
 }
 
 .section-eyecatch-title {
@@ -475,8 +479,10 @@ a:hover {
 }
 
 .section-eyecatch-intro {
+	font-size: 24px;
 	font-weight: bold;
-	margin: 0;
+	line-height: 40px;
+	margin: 0 30px;
 }
 
 .section-eyecatch-img {
@@ -614,6 +620,12 @@ a:hover {
 		max-width: 1180px;
 		margin: 0 auto;
 		padding: 10px 0;
+	}
+
+	.hamburger-btn,
+	.hamburger-menu,
+	.global-nav-sp {
+		display: none;
 	}
 }
 
