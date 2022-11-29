@@ -531,10 +531,6 @@ a:hover {
 /**
 * Footer
 */
-.footer {
-	background: url(./images/footer_back.png) no-repeat 0 0 / cover;
-	min-height: 320px;
-}
 
 .page-top-btn {
 	background: url(./images/arrow-bird.png) no-repeat 0 0 / cover;
@@ -717,6 +713,10 @@ a:hover {
 		background: #fef6e4;
 		color: #001858;
 	}
+
+	/**
+	* header
+	*/
 	.header-inner {
 		align-items: center;
 		display: flex;
@@ -730,6 +730,14 @@ a:hover {
 	.hamburger-menu,
 	.global-nav-sp {
 		display: none;
+	}
+
+	/**
+	* Footer
+	*/
+	.footer {
+		background: url(./images/footer_back.png) no-repeat 0 0 / cover;
+		min-height: 320px;
 	}
 }
 
@@ -759,5 +767,9 @@ a:hover {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+	}
+
+	body.js-menu-open {
+		overflow: hidden;
 	}
 }
