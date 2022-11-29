@@ -363,6 +363,95 @@ template {
 ===========================*/
 
 /**
+ * Accessibility
+ */
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+/**
+ * Content Width images
+ */
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+/**
+ * Captions
+ */
+.wp-caption,
+.gallery-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*='wp-image-'] {
+	display: block;
+	margin: 0;
+}
+
+.wp-caption .wp-caption-text {
+}
+
+/**
+ * align
+ */
+.alignright {
+	float: right;
+	margin: 5px 0 10px 10px;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 10px 10px 0;
+}
+
+.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+/**
+ * By Post Author
+ */
+.bypostauthor {
+	background: #efefef;
+}
+
+/**
+ * Sticky
+ */
+.sticky {
+}
+
+/**
+ * Custom header
+ */
+.custom-header-video {
+	padding-top: 56.25%;
+	position: relative;
+	width: 100%;
+}
+
+.custom-header-video iframe {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+/**
 * Common
 */
 
@@ -442,6 +531,24 @@ a:hover {
 /**
 * Footer
 */
+.footer {
+	background: url(./images/footer_back.png) no-repeat 0 0 / cover;
+	min-height: 320px;
+}
+
+.page-top-btn {
+	background: url(./images/arrow-bird.png) no-repeat 0 0 / cover;
+	bottom: 50px;
+	display: block;
+	height: 80px;
+	position: fixed;
+	right: 50px;
+	width: 80px;
+}
+
+.page-top-btn:hover {
+	background-image: url(./images/arrow-bird-hover.png);
+}
 
 /**
 * Contents
@@ -462,6 +569,7 @@ a:hover {
 .section-eyecatch {
 	align-items: center;
 	display: flex;
+	margin: 0 0 20px 0;
 }
 
 .section-eyecatch-title {
@@ -475,8 +583,10 @@ a:hover {
 }
 
 .section-eyecatch-intro {
+	font-size: 24px;
 	font-weight: bold;
-	margin: 0;
+	line-height: 1.8;
+	margin: 0 30px;
 }
 
 .section-eyecatch-img {
@@ -614,6 +724,12 @@ a:hover {
 		max-width: 1180px;
 		margin: 0 auto;
 		padding: 10px 0;
+	}
+
+	.hamburger-btn,
+	.hamburger-menu,
+	.global-nav-sp {
+		display: none;
 	}
 }
 
