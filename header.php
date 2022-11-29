@@ -65,12 +65,12 @@
 			)); ?>
 
 			<nav class="hamburger-btn">
-				<button>
+				<button id="js-hamburger-btn">
 					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/menu-btn.svg" alt="メニュー" width="100" height="116" loading="eager">
 				</button>
 			</nav>
-			<nav class="hamburger-menu">
-				<button>
+			<nav id="js-hamburger-menu" class="hamburger-menu">
+				<button id="js-hamburger-btn-close">
 					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/menu-btn-close.svg" alt="閉じる" width="90" height="102" loading="lazy">
 				</button>
 				<?php
