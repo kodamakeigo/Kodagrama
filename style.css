@@ -637,7 +637,6 @@ a:hover {
 	font-size: 30px;
 	font-weight: bold;
 	list-style: none;
-	margin: 0 0 20px 0;
 }
 
 .card_wrap p {
@@ -648,60 +647,6 @@ a:hover {
 .home-works-list {
 	display: flex;
 	justify-content: space-around;
-}
-
-/* Contact */
-
-.contact-form {
-	color: #14171a;
-	font-size: 1.4rem;
-	font-weight: bold;
-	margin: 0 auto;
-	width: 500px;
-}
-
-.icon-required,
-.icon-optional {
-	border-radius: 20px;
-	letter-spacing: 0.1em;
-	margin: 0 0 0 10px;
-	padding: 5px 10px;
-}
-
-.icon-required {
-	background-color: #68ade0;
-	color: #fcf7f8;
-}
-
-.icon-optional {
-	background-color: #beb8b8;
-}
-
-.contact-form dt {
-	line-height: 30px;
-	margin: 0 0 10px 0;
-}
-
-.contact-form dd {
-	line-height: 30px;
-	margin: 0 0 20px 0;
-}
-
-.contact-form input[type='text'],
-.contact-form input[type='email'] {
-	line-height: 24px;
-}
-
-.contact-form input[type='text'],
-.contact-form input[type='email'],
-.contact-form textarea {
-	width: 500px;
-}
-
-.contact-form .wpcf7-list-item {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 10px;
 }
 
 /**
@@ -731,6 +676,69 @@ a:hover {
 	.global-nav-sp {
 		display: none;
 	}
+	/**
+	* Eyecatch
+	*/
+	.sp-section {
+		display: none;
+	}
+
+	.pc-section {
+		display: block;
+	}
+
+	/* Contact */
+	.contact-form {
+		color: #14171a;
+		font-size: 1.4rem;
+		font-weight: bold;
+		margin: 0 auto;
+		width: 500px;
+	}
+
+	.icon-required,
+	.icon-optional {
+		border-radius: 20px;
+		letter-spacing: 0.1em;
+		margin: 0 0 0 10px;
+		padding: 5px 10px;
+	}
+
+	.icon-required {
+		background-color: #68ade0;
+		color: #fcf7f8;
+	}
+
+	.icon-optional {
+		background-color: #beb8b8;
+	}
+
+	.contact-form dt {
+		line-height: 30px;
+		margin: 0 0 10px 0;
+	}
+
+	.contact-form dd {
+		line-height: 30px;
+		margin: 0 0 20px 0;
+	}
+
+	.contact-form input[type='text'],
+	.contact-form input[type='email'] {
+		line-height: 24px;
+	}
+
+	.contact-form input[type='text'],
+	.contact-form input[type='email'],
+	.contact-form textarea {
+		width: 500px;
+	}
+
+	.contact-form .wpcf7-list-item {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
 
 	/**
 	* Footer
@@ -755,8 +763,20 @@ a:hover {
 	}
 
 	/**
+	* Header
+	*/
+
+	.header {
+		position: static;
+	}
+
+	/**
 	* Menu
 	*/
+	.header-inner {
+		display: flex;
+		justify-content: space-between;
+	}
 
 	.hamburger-menu {
 		background: #fff;
@@ -771,5 +791,76 @@ a:hover {
 
 	body.js-menu-open {
 		overflow: hidden;
+	}
+
+	/**
+	* Eyecatch
+	*/
+
+	.section-eyecatch {
+		display: block;
+	}
+
+	.section-eyecatch-img {
+		width: 428px;
+		margin: 0 auto;
+	}
+
+	.pc-section {
+		display: none;
+	}
+
+	.sp-section {
+		display: block;
+	}
+
+	.section-eyecatch-text {
+		width: 100%;
+	}
+
+	.section-eyecatch-intro {
+		display: none;
+	}
+
+	/**
+	* Works
+	*/
+
+	.home-works-list {
+		display: block;
+	}
+
+	.card_wrap {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.familycard,
+	.maicard,
+	.kscard {
+		text-align: center;
+	}
+
+	/**
+	* Contact
+	*/
+	.contact-form {
+		color: #fef6e4;
+	}
+
+	.contact-form input[type='text'],
+	.contact-form input[type='email'],
+	.contact-form textarea {
+		width: 80%;
+	}
+
+	/**
+	* Footer
+	*/
+	.page-top-btn {
+		bottom: 30px;
+		height: 50px;
+		right: 30px;
+		width: 50px;
 	}
 }
