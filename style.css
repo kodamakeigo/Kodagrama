@@ -482,121 +482,39 @@ a:active {
 	color: #001858;
 }
 
-a:hover {
-	text-decoration: underline;
+img {
+	max-width: 100%;
+	height: auto;
 }
 
-/**
-* Header
-*/
+/*
+ * Header
+ */
 
 .header {
-	background: #fffbf4;
-	box-shadow: 0 5px 6px 0 #a2a1a1;
-	height: 100px;
 	position: fixed;
-	width: 100%;
+	top: 0;
 	z-index: 10000;
 }
 
-.global-nav .menu {
+.header-inner {
+	align-items: center;
 	display: flex;
+	justify-content: space-between;
 }
 
 .header-logo {
 	margin: 0;
 }
 
-.header-logo img {
-	display: block;
-	width: 120px;
-	height: auto;
-}
-
-.global-nav .menu-item {
-	font-size: 40px;
-	font-weight: bold;
-}
-
-.global-nav .menu-item:not(:last-child) {
-	margin: 0 70px 0 0;
-}
-
-.global-nav .menu {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-/**
-* Footer
-*/
+/*
+ * Footer
+ */
 
 .page-top-btn {
 	background: url(./images/arrow-bird.png) no-repeat 0 0 / cover;
-	bottom: 50px;
 	display: block;
-	height: 80px;
 	position: fixed;
-	right: 50px;
-	width: 80px;
-}
-
-.page-top-btn:hover {
-	background-image: url(./images/arrow-bird-hover.png);
-}
-
-/**
-* Contents
-*/
-
-.title-home {
-	font-size: 40px;
-	text-align: center;
-	margin: 0 0 40px 0;
-}
-
-.main-contents {
-	padding: 100px 0 0;
-}
-
-/*Eyecatch */
-
-.section-eyecatch {
-	align-items: center;
-	display: flex;
-	margin: 0 0 20px 0;
-}
-
-.section-eyecatch-title {
-	font-size: 60px;
-	margin: 0 0 60px;
-	text-align: center;
-}
-
-.section-eyecatch-title-sub {
-	font-size: 40px;
-}
-
-.section-eyecatch-intro {
-	font-size: 24px;
-	font-weight: bold;
-	line-height: 1.8;
-	margin: 0 30px;
-}
-
-.section-eyecatch-img {
-	margin: 0;
-	width: 68%;
-}
-
-.section-eyecatch-img img {
-	width: 100%;
-	height: auto;
-}
-
-.section-eyecatch-text {
-	width: 32%;
 }
 
 /* About */
@@ -616,39 +534,6 @@ a:hover {
 	overflow: hidden;
 }
 
-/* Works */
-
-.home-works-list {
-	margin: 0 30px;
-	padding: 0;
-}
-
-.card_wrap {
-	width: 28vw;
-}
-
-.crad_img {
-	display: block;
-	margin: 0 0 20px 0;
-	width: 100%;
-}
-
-.home-works-list li {
-	font-size: 30px;
-	font-weight: bold;
-	list-style: none;
-}
-
-.card_wrap p {
-	font-size: 20px;
-	margin: 0;
-}
-
-.home-works-list {
-	display: flex;
-	justify-content: space-around;
-}
-
 /**
 * PC Styles
 ============================*/
@@ -659,13 +544,22 @@ a:hover {
 		color: #001858;
 	}
 
+	a:hover {
+		text-decoration: underline;
+	}
+
 	/**
-	* header
+	* Header
 	*/
+
+	.header {
+		background: #fffbf4;
+		box-shadow: 0 5px 6px 0 #a2a1a1;
+		height: 100px;
+		width: 100%;
+	}
+
 	.header-inner {
-		align-items: center;
-		display: flex;
-		justify-content: space-between;
 		max-width: 1180px;
 		margin: 0 auto;
 		padding: 10px 0;
@@ -676,15 +570,140 @@ a:hover {
 	.global-nav-sp {
 		display: none;
 	}
+
+	.global-nav .menu {
+		display: flex;
+	}
+
+	.header-logo img {
+		display: block;
+		width: 120px;
+		height: auto;
+	}
+
+	.global-nav .menu-item {
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+	.global-nav .menu-item:not(:last-child) {
+		margin: 0 70px 0 0;
+	}
+
+	.global-nav .menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
 	/**
-	* Eyecatch
+	* Footer
 	*/
+
+	.page-top-btn {
+		bottom: 50px;
+		height: 80px;
+		right: 50px;
+		width: 80px;
+	}
+
+	.page-top-btn:hover {
+		background-image: url(./images/arrow-bird-hover.png);
+	}
+
+	/**
+	* Contents
+	*/
+
+	.title-home {
+		font-size: 40px;
+		text-align: center;
+		margin: 0 0 40px 0;
+	}
+
+	.main-contents {
+		padding: 100px 0 0;
+	}
+
+	/*Eyecatch */
+
 	.sp-section {
 		display: none;
 	}
 
 	.pc-section {
 		display: block;
+	}
+
+	.section-eyecatch {
+		align-items: center;
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 0 0 20px 0;
+	}
+
+	.section-eyecatch-title {
+		font-size: 60px;
+		margin: 0 0 60px;
+		text-align: center;
+	}
+
+	.section-eyecatch-title-sub {
+		font-size: 40px;
+	}
+
+	.section-eyecatch-intro {
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 1.8;
+		margin: 0 30px;
+	}
+
+	.section-eyecatch-img {
+		margin: 0;
+		width: 68%;
+	}
+
+	.section-eyecatch-img img {
+		width: 100%;
+		height: auto;
+	}
+
+	.section-eyecatch-text {
+		width: 32%;
+	}
+
+	/* Works */
+
+	.home-works-list {
+		margin: 0 30px;
+		padding: 0;
+	}
+
+	.card_wrap {
+		width: 28vw;
+	}
+
+	.crad_img {
+		display: block;
+		margin: 0 0 20px 0;
+		width: 100%;
+	}
+
+	.home-works-list li {
+		font-size: 30px;
+		font-weight: bold;
+		list-style: none;
+	}
+
+	.card_wrap p {
+		font-size: 20px;
+		margin: 0;
+	}
+
+	.home-works-list {
+		display: flex;
+		justify-content: space-around;
 	}
 
 	/* Contact */
@@ -762,20 +781,40 @@ a:hover {
 		display: none;
 	}
 
+	.main-contents {
+		padding: 100px 0 0;
+	}
+
 	/**
 	* Header
 	*/
 
 	.header {
-		position: static;
+		background: #01133a;
+		height: 100px;
+		padding: 10px 3%;
+		width: 100%;
+	}
+
+	.header-logo {
+		width: 120px;
 	}
 
 	/**
 	* Menu
 	*/
-	.header-inner {
-		display: flex;
-		justify-content: space-between;
+
+	.hamburger-btn button {
+		-webkit-appearance: none;
+		appearance: none;
+		background: none;
+		border: none;
+		padding: 0;
+	}
+
+	.hamburger-btn img {
+		height: 80px;
+		width: 70px;
 	}
 
 	.hamburger-menu {
@@ -802,8 +841,8 @@ a:hover {
 	}
 
 	.section-eyecatch-img {
-		width: 428px;
-		margin: 0 auto;
+		width: 94%;
+		margin: 0 3%;
 	}
 
 	.pc-section {
@@ -816,10 +855,6 @@ a:hover {
 
 	.section-eyecatch-text {
 		width: 100%;
-	}
-
-	.section-eyecatch-intro {
-		display: none;
 	}
 
 	/**
