@@ -54,7 +54,10 @@
 		<div class="header-inner">
 			<h1 class="header-logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
-					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo.png" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" width="245" height="160" loading="eager">
+					<picture>
+						<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo-white.svg" media="(max-width: 767px)">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo.png" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" width="245" height="160" loading="eager">
+					</picture>
 				</a>
 			</h1>
 			<?php
