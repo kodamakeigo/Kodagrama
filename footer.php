@@ -10,8 +10,12 @@
 ?>
 </main>
 <footer class="footer">
-    <a href="#" class="page-top-btn"><span class="screen-reader-text">ページトップへ</span></a>
-    <!-- <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/footer_back.png" class="footer_back" alt="背景" width="1280" height="300" loading="lazy"> -->
+    <div class="footer-inner">
+        <a href="#" class="page-top-btn"><span class="screen-reader-text">ページトップへ</span></a>
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/pc-footer-crabs.png" class="pc-footer-crabs pc-section" alt="" width="1380" height="300" loading="lazy">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/sp-footer-crab.png" class="sp-footer-crab sp-section" alt="" width="160" height="100" loading="lazy">
+    </div>
+    <p class="copyright">&copy;kodagrama</p>
 </footer>
 <?php wp_footer(); ?>
 </body>
