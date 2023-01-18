@@ -585,8 +585,9 @@ img {
 
 	.header-logo img {
 		display: block;
-		width: 120px;
+		width: 80px;
 		height: auto;
+		margin: 0 0 0 20px;
 	}
 
 	.global-nav .menu-item {
@@ -674,7 +675,7 @@ img {
 
 /*Eyecatch */
 
-.section-eyecatch {
+.section-eyecatch-inner {
 	align-items: center;
 	display: flex;
 	flex-direction: row-reverse;
@@ -817,17 +818,19 @@ img {
 		height: 100px;
 		padding: 10px 3%;
 		width: 100%;
+		z-index: 9000;
 	}
 
 	.header-logo {
-		width: 120px;
+		width: 80px;
 	}
 
 	/**
 	* Menu
 	*/
 
-	.hamburger-btn button {
+	.hamburger-btn button,
+	.hamburger-menu button {
 		-webkit-appearance: none;
 		appearance: none;
 		background: none;
@@ -835,37 +838,86 @@ img {
 		padding: 0;
 	}
 
-	.hamburger-btn img {
+	.hamburger-btn img,
+	.hamburger-menu img {
 		height: 80px;
 		width: 70px;
 	}
 
 	.hamburger-menu {
-		background: #fff;
+		background: #001858;
+		background-image: url(./images/sp-menu-ill-fish.png),
+			url(./images/sp-menu-ill-bubble-left.png),
+			url(./images/sp-menu-ill-bubble-right.png),
+			url(./images/sp-menu-ill-bottoms.png);
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+		background-position: left 5vw top 110px, left 5vw bottom 20vh,
+			right 5vw bottom 35vh, right 5vw bottom 0;
+		background-size: 50vw auto, 15vw auto, 20vw auto, 80vw auto;
 		display: none;
 		height: 100%;
 		left: 0;
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: 10000;
 	}
 
 	body.js-menu-open {
 		overflow: hidden;
 	}
 
+	.global-nav-sp {
+		align-items: center;
+		display: flex;
+		height: 70vh;
+		justify-content: center;
+	}
+
+	.menu {
+		align-items: center;
+		padding: 0;
+		margin: 0;
+	}
+
+	.menu li {
+		list-style: none;
+		text-align: center;
+	}
+
+	.menu li:not(:first-child) {
+		padding: 30px 0 0 0;
+	}
+
+	.menu li a {
+		color: #fef6e4;
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+	.menu li a:hover {
+		text-decoration: underline;
+	}
+
+	.main-contents {
+	}
+
 	/**
 	* Eyecatch
 	*/
 
-	.section-eyecatch {
+	.section-eyecatch-inner {
 		display: block;
+		height: calc(100svh - 100px);
 	}
 
 	.section-eyecatch-img {
-		width: 94%;
-		margin: 0 3%;
+		/* width: 94%; */
+		margin: 0 auto;
+	}
+
+	.section-eyecatch-img img {
+		max-height: 100%;
+		width: auto;
 	}
 
 	.pc-section {
@@ -876,10 +928,13 @@ img {
 		display: block;
 	}
 
+	.section-eyecatch-title {
+		margin: 0 0 20px;
+	}
+
 	.section-eyecatch-text {
 		width: 100%;
 	}
-
 	/**
 	* Works
 	*/
