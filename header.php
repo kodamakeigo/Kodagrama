@@ -73,9 +73,19 @@
 				</button>
 			</nav>
 			<nav id="js-hamburger-menu" class="hamburger-menu">
-				<button id="js-hamburger-btn-close">
-					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/menu-btn-close.svg" alt="閉じる" width="90" height="102" loading="lazy">
-				</button>
+				<div class="header-inner">
+					<div class="header-logo">
+						<a href="<?php echo esc_url(home_url('/')); ?>">
+							<picture>
+								<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo-white.svg" media="(max-width: 767px)">
+								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo.png" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" width="245" height="160" loading="eager">
+							</picture>
+						</a>
+					</div>
+					<button id="js-hamburger-btn-close">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/menu-btn-close.svg" alt="閉じる" width="90" height="102" loading="lazy">
+					</button>
+				</div>
 				<?php
 				wp_nav_menu(array(
 					'container'       => 'div',
