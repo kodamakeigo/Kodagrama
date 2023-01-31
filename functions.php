@@ -59,6 +59,12 @@ function theme_setup()
 	// Indicate widget sidebars can use selective refresh in the Customizer.
 	add_theme_support('customize-selective-refresh-widgets');
 
+	// // Block editor support
+	// add_theme_support('wp-block-styles');
+
+	// // Responsive embedded content
+	// add_theme_support('responsive-embeds');
+
 	/**
 	 * Content Width Support
 	 * @see: https://codex.wordpress.org/Content_Width
