@@ -542,6 +542,20 @@ img {
 	overflow: hidden;
 }
 
+/* Contact */
+.wpcf7-submit {
+	-webkit-appearance: none;
+	appearance: none;
+	background: #68ade0;
+	border: none;
+	border-radius: 20px;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	line-height: 2;
+	margin: 0 auto;
+}
+
 /**
 * PC Styles
 ============================*/
@@ -657,6 +671,10 @@ img {
 	.contact-form textarea {
 		width: 500px;
 	}
+
+	.wpcf7-submit {
+		width: 50%;
+	}
 }
 
 /**
@@ -757,9 +775,11 @@ img {
 .icon-required,
 .icon-optional {
 	border-radius: 20px;
+	font-size: 14px;
 	letter-spacing: 0.1em;
 	margin: 0 0 0 10px;
 	padding: 5px 10px;
+	vertical-align: top;
 }
 
 .icon-required {
@@ -794,7 +814,7 @@ img {
 
 /**
 * SP Styles
-============================*/
+=================================================*/
 
 @media screen and (max-width: 767px) {
 	body {
@@ -903,6 +923,20 @@ img {
 	}
 
 	/**
+	* Contents
+	*/
+
+	.title-home {
+		font-size: 30px;
+		text-align: center;
+		margin: 0 0 10px 0;
+	}
+
+	.home-about-list-wrap {
+		margin: 0 0 80px 0;
+	}
+
+	/**
 	* Eyecatch
 	*/
 
@@ -921,6 +955,12 @@ img {
 		width: auto;
 	}
 
+	.section-eyecatch-intro {
+		font-size: 16px;
+		line-height: 1.6;
+		margin: 0 30px 80px;
+	}
+
 	.pc-section {
 		display: none;
 	}
@@ -936,6 +976,23 @@ img {
 	.section-eyecatch-text {
 		width: 100%;
 	}
+
+	/**
+	* About
+	*/
+
+	.home-about-list li {
+		background: #fef6e4;
+		color: #01133a;
+		padding: 10px;
+	}
+
+	.home-about-list li span {
+		display: block;
+		font-weight: bold;
+		text-align: center;
+	}
+
 	/**
 	* Works
 	*/
@@ -949,22 +1006,44 @@ img {
 		width: 90%;
 	}
 
+	.crad_img {
+		margin: 0 0 12px 0;
+	}
+
 	.familycard,
 	.maicard,
 	.kscard {
+		font-size: 24px;
 		text-align: center;
+		margin: 0 0 10px 0;
+	}
+
+	.card_wrap p {
+		font-size: 16px;
+		font-weight: normal;
+		margin: 0 0 16px 0;
 	}
 
 	/**
 	* Contact
 	*/
+
+	.home-contact {
+		margin: 0 30px;
+	}
+
 	.contact-form {
 		color: #fef6e4;
+		text-align: left;
 	}
 
 	.contact-form input[type='text'],
 	.contact-form input[type='email'],
 	.contact-form textarea {
+		width: 100%;
+	}
+
+	.wpcf7-submit {
 		width: 80%;
 	}
 

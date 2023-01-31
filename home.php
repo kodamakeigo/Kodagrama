@@ -67,10 +67,10 @@ get_header(); ?>
                 <p>妻が就職した不動産会社の名刺をデザインしました。<br>モノクロのシンプルな配色を意識し、顔写真有など細かな要望に答える形で作成しました。</p>
             </li>
             <li class="card_wrap">
-                <h3 class="kscard">オカンの名刺</h3>
+                <h3 class="kscard">母の名刺</h3>
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/ks_flont.png" class="crad_img" alt="オカンの名刺画像表" width="" height="" loading="lazy">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/ks_back.png" class="crad_img" alt="オカンの名刺画像裏" width="" height="" loading="lazy">
-                <p>オカンの不動産管理会社名刺をデザインしました。<br>北海道をモチーフにしてとのことでしたので、かわいい動物と北海道拠点の富良野から見える十勝岳連峰の写真をイラスト風に加工しました。</p>
+                <p>母の不動産管理会社名刺をデザインしました。<br>北海道をモチーフにしてとのことでしたので、かわいい動物と北海道拠点の富良野から見える十勝岳連峰の写真をイラスト風に加工しました。</p>
             </li>
         </ul>
     </div>
@@ -78,6 +78,8 @@ get_header(); ?>
 
 <section>
     <h2 class="title-home">Contact</h2>
-    <?php echo do_shortcode('[contact-form-7 id="17" title="お問い合わせフォーム"]'); ?>
+    <div class="home-contact">
+        <?php echo do_shortcode('[contact-form-7 id="17" title="お問い合わせフォーム"]'); ?>
+    </div>
 </section>
 <?php get_footer();
