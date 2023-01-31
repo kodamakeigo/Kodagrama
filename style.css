@@ -544,6 +544,12 @@ img {
 
 /* Contact */
 .wpcf7-submit {
+	-webkit-appearance: none;
+	appearance: none;
+	background: #68ade0;
+	border: none;
+	border-radius: 20px;
+	color: #fff;
 	display: block;
 	font-weight: bold;
 	line-height: 2;
@@ -665,6 +671,10 @@ img {
 	.contact-form textarea {
 		width: 500px;
 	}
+
+	.wpcf7-submit {
+		width: 50%;
+	}
 }
 
 /**
@@ -765,9 +775,11 @@ img {
 .icon-required,
 .icon-optional {
 	border-radius: 20px;
+	font-size: 14px;
 	letter-spacing: 0.1em;
 	margin: 0 0 0 10px;
 	padding: 5px 10px;
+	vertical-align: top;
 }
 
 .icon-required {
@@ -921,7 +933,7 @@ img {
 	}
 
 	.home-about-list-wrap {
-		margin: 0 0 20px 0;
+		margin: 0 0 80px 0;
 	}
 
 	/**
@@ -946,7 +958,7 @@ img {
 	.section-eyecatch-intro {
 		font-size: 16px;
 		line-height: 1.6;
-		margin: 0 30px 20px;
+		margin: 0 30px 80px;
 	}
 
 	.pc-section {
@@ -1008,21 +1020,31 @@ img {
 
 	.card_wrap p {
 		font-size: 16px;
+		font-weight: normal;
 		margin: 0 0 16px 0;
 	}
 
 	/**
 	* Contact
 	*/
+
+	.home-contact {
+		margin: 0 30px;
+	}
+
 	.contact-form {
 		color: #fef6e4;
-		text-align: center;
+		text-align: left;
 	}
 
 	.contact-form input[type='text'],
 	.contact-form input[type='email'],
 	.contact-form textarea {
-		width: 90%;
+		width: 100%;
+	}
+
+	.wpcf7-submit {
+		width: 80%;
 	}
 
 	/**

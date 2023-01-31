@@ -78,6 +78,8 @@ get_header(); ?>
 
 <section>
     <h2 class="title-home">Contact</h2>
-    <?php echo do_shortcode('[contact-form-7 id="17" title="お問い合わせフォーム"]'); ?>
+    <div class="home-contact">
+        <?php echo do_shortcode('[contact-form-7 id="17" title="お問い合わせフォーム"]'); ?>
+    </div>
 </section>
 <?php get_footer();
