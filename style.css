@@ -542,7 +542,7 @@ img {
 	overflow: hidden;
 }
 
-.bx-wrapper img {
+.home-about-list-wrap img {
 	margin: 0 0 10px 0;
 }
 
@@ -633,6 +633,10 @@ img {
 		margin: 0 0 0 20px;
 	}
 
+	.global-nav {
+		margin: 0 20px 0 0;
+	}
+
 	.global-nav .menu-item {
 		font-size: 40px;
 		font-weight: bold;
@@ -686,6 +690,8 @@ img {
 	.copyright {
 		display: block;
 		font-weight: bold;
+		margin: 0;
+		padding: 0 0 15px 0;
 		text-align: center;
 	}
 
@@ -875,7 +881,7 @@ img {
 
 .rule {
 	background: #fff;
-	margin: 0 auto;
+	margin: 0 auto 60px;
 	width: 60vw;
 }
 
