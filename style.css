@@ -542,6 +542,22 @@ img {
 	overflow: hidden;
 }
 
+.home-about-list-wrap img {
+	margin: 0 0 10px 0;
+}
+
+.home-about-list li {
+	background: #fef6e4;
+	color: #01133a;
+	padding: 10px;
+}
+
+.home-about-list li span {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+}
+
 /* Contact */
 .wpcf7-submit {
 	-webkit-appearance: none;
@@ -556,9 +572,22 @@ img {
 	margin: 0 auto;
 }
 
+.rule {
+	text-align: center;
+}
+
+.rule-title {
+	margin: 0 0 10px 0;
+}
+
+.rule-rayout p {
+	margin: 0;
+	text-align: left;
+}
+
 /**
 * PC Styles
-============================*/
+==========================================================================================*/
 
 @media screen and (min-width: 768px) {
 	body {
@@ -604,6 +633,10 @@ img {
 		margin: 0 0 0 20px;
 	}
 
+	.global-nav {
+		margin: 0 20px 0 0;
+	}
+
 	.global-nav .menu-item {
 		font-size: 40px;
 		font-weight: bold;
@@ -624,14 +657,16 @@ img {
 	*/
 
 	.page-top-btn {
-		bottom: 50px;
+		bottom: 20px;
 		height: 80px;
-		right: 50px;
+		right: 30px;
+		opacity: 0.6;
 		width: 80px;
 	}
 
 	.page-top-btn:hover {
 		background-image: url(./images/arrow-bird-hover.png);
+		opacity: 1;
 	}
 
 	.footer {
@@ -655,6 +690,8 @@ img {
 	.copyright {
 		display: block;
 		font-weight: bold;
+		margin: 0;
+		padding: 0 0 15px 0;
 		text-align: center;
 	}
 
@@ -673,7 +710,14 @@ img {
 	}
 
 	.wpcf7-submit {
+		height: 60px;
 		width: 50%;
+	}
+
+	.wpcf7-submit:hover {
+		color: #001858;
+		cursor: pointer;
+		text-decoration: underline;
 	}
 }
 
@@ -684,11 +728,17 @@ img {
 .title-home {
 	font-size: 40px;
 	text-align: center;
-	margin: 0 0 40px 0;
+	margin: 0 0 20px 0;
 }
 
 .main-contents {
 	padding: 100px 0 0;
+}
+
+.about,
+.works,
+.contact {
+	margin: 0 0 60px 0;
 }
 
 /*Eyecatch */
@@ -701,17 +751,17 @@ img {
 }
 
 .section-eyecatch-title {
-	font-size: 60px;
-	margin: 0 0 60px;
+	font-size: 5vw;
+	margin: 0 0 3vh;
 	text-align: center;
 }
 
 .section-eyecatch-title-sub {
-	font-size: 40px;
+	font-size: 4vw;
 }
 
 .section-eyecatch-intro {
-	font-size: 24px;
+	font-size: 2vw;
 	font-weight: bold;
 	line-height: 1.8;
 	margin: 0 30px;
@@ -729,6 +779,16 @@ img {
 
 .section-eyecatch-text {
 	width: 32%;
+}
+
+/* About */
+
+.home-about-list li span {
+	font-size: 24px;
+}
+
+.bx-wrapper .bx-pager {
+	position: static;
 }
 
 /* Works */
@@ -755,7 +815,8 @@ img {
 }
 
 .card_wrap p {
-	font-size: 20px;
+	font-size: 2vw;
+	font-weight: normal;
 	margin: 0;
 }
 
@@ -764,9 +825,15 @@ img {
 	justify-content: space-around;
 }
 
+.familycard,
+.maicard,
+.kscard {
+	margin: 0 0 20px 0;
+}
+
 /* Contact */
 .contact-form {
-	color: #14171a;
+	color: #001858;
 	font-size: 1.4rem;
 	font-weight: bold;
 	margin: 0 auto;
@@ -812,9 +879,30 @@ img {
 	margin-bottom: 10px;
 }
 
+.rule {
+	background: #fff;
+	margin: 0 auto 60px;
+	width: 60vw;
+}
+
+.rule-title {
+	font-size: 24px;
+	padding: 20px 0 0 0;
+}
+
+.rule-rayout {
+	padding: 0 20px 20px;
+}
+
+.rule-rayout p {
+	font-size: 20px;
+	margin: 0 0 20px 0;
+	text-align: left;
+}
+
 /**
 * SP Styles
-=================================================*/
+======================================================================================*/
 
 @media screen and (max-width: 767px) {
 	body {
@@ -981,18 +1069,6 @@ img {
 	* About
 	*/
 
-	.home-about-list li {
-		background: #fef6e4;
-		color: #01133a;
-		padding: 10px;
-	}
-
-	.home-about-list li span {
-		display: block;
-		font-weight: bold;
-		text-align: center;
-	}
-
 	/**
 	* Works
 	*/
@@ -1040,7 +1116,24 @@ img {
 	.contact-form input[type='text'],
 	.contact-form input[type='email'],
 	.contact-form textarea {
+		background: #fef6e4;
 		width: 100%;
+	}
+
+	.rule {
+		background: #fef6e4;
+		color: #001858;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.rule-title {
+		font-size: 20px;
+	}
+
+	.rule-rayout p {
+		font-size: 14px;
+		margin: 0 0 10px 0;
 	}
 
 	.wpcf7-submit {
