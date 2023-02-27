@@ -11,8 +11,9 @@ get_header(); ?>
 
 <section>
     <header>
-        <h1>お探しのページは見つかりませんでした。</h1>
+        <h1 class="404">お探しのページが見つかりませんでした。</h1>
     </header>
+
 
     <div class="page-content">
         <div class="page-404-search">
@@ -35,6 +36,20 @@ get_header(); ?>
                 ">トップページへ</a>
             </nav>
         </div> -->
+
+        <div class="404-image">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/404-image.png" alt="404 Not Found" width="700" height="200" loading="lazy">
+        </div>
+        <section class="404-announce">
+            <p>URLが間違っているか、ページが存在しません。<br>下のリンク一覧から他のページをご覧ください。</p>
+            <a href="#">Topページ</a>
+            <nav class="404-move">
+                <a class="404-about" href="">About</a>
+                <a class="404-works" href="">Works</a>
+                <a class="404-contact" href="">Contact</a>
+            </nav>
+        </section>
+
     </div>
 
 </section>
