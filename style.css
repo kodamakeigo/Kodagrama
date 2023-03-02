@@ -719,185 +719,246 @@ img {
 		cursor: pointer;
 		text-decoration: underline;
 	}
-}
 
-/**
+	/**
 	* Contents
 	*/
 
-.title-home {
-	font-size: 40px;
-	text-align: center;
-	margin: 0 0 20px 0;
-}
+	.title-home {
+		font-size: 40px;
+		text-align: center;
+		margin: 0 0 20px 0;
+	}
 
-.main-contents {
-	padding: 100px 0 0;
-}
+	.main-contents {
+		padding: 100px 0 0;
+	}
 
-.about,
-.works,
-.contact {
-	margin: 0 0 60px 0;
-}
+	.about,
+	.works,
+	.contact {
+		margin: 0 0 60px 0;
+	}
 
-/*Eyecatch */
+	/*Eyecatch */
 
-.section-eyecatch-inner {
-	align-items: center;
-	display: flex;
-	flex-direction: row-reverse;
-	margin: 0 0 20px 0;
-}
+	.section-eyecatch-inner {
+		align-items: center;
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 0 0 20px 0;
+	}
 
-.section-eyecatch-title {
-	font-size: 5vw;
-	margin: 0 0 3vh;
-	text-align: center;
-}
+	.section-eyecatch-title {
+		font-size: 5vw;
+		margin: 0 0 3vh;
+		text-align: center;
+	}
 
-.section-eyecatch-title-sub {
-	font-size: 4vw;
-}
+	.section-eyecatch-title-sub {
+		font-size: 4vw;
+	}
 
-.section-eyecatch-intro {
-	font-size: 2vw;
-	font-weight: bold;
-	line-height: 1.8;
-	margin: 0 30px;
-}
+	.section-eyecatch-intro {
+		font-size: 2vw;
+		font-weight: bold;
+		line-height: 1.8;
+		margin: 0 30px;
+	}
 
-.section-eyecatch-img {
-	margin: 0;
-	width: 68%;
-}
+	.section-eyecatch-img {
+		margin: 0;
+		width: 68%;
+	}
 
-.section-eyecatch-img img {
-	width: 100%;
-	height: auto;
-}
+	.section-eyecatch-img img {
+		width: 100%;
+		height: auto;
+	}
 
-.section-eyecatch-text {
-	width: 32%;
-}
+	.section-eyecatch-text {
+		width: 32%;
+	}
 
-/* About */
+	/* About */
 
-.home-about-list li span {
-	font-size: 24px;
-}
+	.home-about-list li span {
+		font-size: 24px;
+	}
 
-.bx-wrapper .bx-pager {
-	position: static;
-}
+	.bx-wrapper .bx-pager {
+		position: static;
+	}
 
-/* Works */
+	/* Works */
 
-.home-works-list {
-	margin: 0 30px;
-	padding: 0;
-}
+	.home-works-list {
+		margin: 0 30px;
+		padding: 0;
+	}
 
-.card_wrap {
-	width: 28vw;
-}
+	.card_wrap {
+		width: 28vw;
+	}
 
-.crad_img {
-	display: block;
-	margin: 0 0 20px 0;
-	width: 100%;
-}
+	.crad_img {
+		display: block;
+		margin: 0 0 20px 0;
+		width: 100%;
+	}
 
-.home-works-list li {
-	font-size: 30px;
-	font-weight: bold;
-	list-style: none;
-}
+	.home-works-list li {
+		font-size: 30px;
+		font-weight: bold;
+		list-style: none;
+	}
 
-.card_wrap p {
-	font-size: 2vw;
-	font-weight: normal;
-	margin: 0;
-}
+	.card_wrap p {
+		font-size: 2vw;
+		font-weight: normal;
+		margin: 0;
+	}
 
-.home-works-list {
-	display: flex;
-	justify-content: space-around;
-}
+	.home-works-list {
+		display: flex;
+		justify-content: space-around;
+	}
 
-.familycard,
-.maicard,
-.kscard {
-	margin: 0 0 20px 0;
-}
+	.familycard,
+	.maicard,
+	.kscard {
+		margin: 0 0 20px 0;
+	}
 
-/* Contact */
-.contact-form {
-	color: #001858;
-	font-size: 1.4rem;
-	font-weight: bold;
-	margin: 0 auto;
-}
+	/* Contact */
+	.contact-form {
+		color: #001858;
+		font-size: 1.4rem;
+		font-weight: bold;
+		margin: 0 auto;
+	}
 
-.icon-required,
-.icon-optional {
-	border-radius: 20px;
-	font-size: 14px;
-	letter-spacing: 0.1em;
-	margin: 0 0 0 10px;
-	padding: 5px 10px;
-	vertical-align: top;
-}
+	.icon-required,
+	.icon-optional {
+		border-radius: 20px;
+		font-size: 14px;
+		letter-spacing: 0.1em;
+		margin: 0 0 0 10px;
+		padding: 5px 10px;
+		vertical-align: top;
+	}
 
-.icon-required {
-	background-color: #68ade0;
-	color: #fcf7f8;
-}
+	.icon-required {
+		background-color: #68ade0;
+		color: #fcf7f8;
+	}
 
-.icon-optional {
-	background-color: #beb8b8;
-}
+	.icon-optional {
+		background-color: #beb8b8;
+	}
 
-.contact-form dt {
-	line-height: 30px;
-	margin: 0 0 10px 0;
-}
+	.contact-form dt {
+		line-height: 30px;
+		margin: 0 0 10px 0;
+	}
 
-.contact-form dd {
-	line-height: 30px;
-	margin: 0 0 20px 0;
-}
+	.contact-form dd {
+		line-height: 30px;
+		margin: 0 0 20px 0;
+	}
 
-.contact-form input[type='text'],
-.contact-form input[type='email'] {
-	line-height: 24px;
-}
+	.contact-form input[type='text'],
+	.contact-form input[type='email'] {
+		line-height: 24px;
+	}
 
-.contact-form .wpcf7-list-item {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 10px;
-}
+	.contact-form .wpcf7-list-item {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
 
-.rule {
-	background: #fff;
-	margin: 0 auto 60px;
-	width: 60vw;
-}
+	.rule {
+		background: #fff;
+		margin: 0 auto 60px;
+		width: 60vw;
+	}
 
-.rule-title {
-	font-size: 24px;
-	padding: 20px 0 0 0;
-}
+	.rule-title {
+		font-size: 24px;
+		padding: 20px 0 0 0;
+	}
 
-.rule-rayout {
-	padding: 0 20px 20px;
-}
+	.rule-rayout {
+		padding: 0 20px 20px;
+	}
 
-.rule-rayout p {
-	font-size: 20px;
-	margin: 0 0 20px 0;
-	text-align: left;
+	.rule-rayout p {
+		font-size: 20px;
+		margin: 0 0 20px 0;
+		text-align: left;
+	}
+
+	/* 404 */
+	.page-404-pc {
+		margin: 40px 0 60px 0;
+		text-align: center;
+	}
+
+	.page-404-sp {
+		display: none;
+	}
+
+	.image-404 img {
+		display: block;
+		margin: 0 auto 50px;
+	}
+
+	.announce-text-404 {
+		margin: 0 0 20px 0;
+	}
+
+	.announce-404 p {
+		font-size: 24px;
+		margin: 0 0 0 20px;
+		text-align: center;
+	}
+
+	.move-404 {
+		margin: 0 0 60px 0;
+	}
+
+	.move-404-list {
+		display: flex;
+		justify-content: space-around;
+		margin: 0 auto;
+		padding: 0;
+		width: 700px;
+	}
+
+	.move-404-list li {
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.top-404 a {
+		background: #b4efec;
+		border: solid 3px #001858;
+		border-radius: 5px;
+		display: block;
+		font-size: 36px;
+		font-weight: bold;
+		height: 60px;
+		margin: 0 auto;
+		text-align: center;
+		width: 230px;
+	}
+
+	.top-404 a:hover {
+		background: #001858;
+		color: #b4efec;
+		cursor: pointer;
+	}
 }
 
 /**
@@ -1030,7 +1091,7 @@ img {
 
 	.section-eyecatch-inner {
 		display: block;
-		height: calc(100svh - 100px);
+		height: calc(62svh - 30px);
 	}
 
 	.section-eyecatch-img {
@@ -1039,13 +1100,15 @@ img {
 	}
 
 	.section-eyecatch-img img {
-		max-height: 100%;
-		width: auto;
+		display: block;
+		height: auto;
+		margin: 0 auto;
+		width: 60vw;
 	}
 
 	.section-eyecatch-intro {
 		font-size: 16px;
-		line-height: 1.6;
+		line-height: 1.4;
 		margin: 0 30px 80px;
 	}
 
@@ -1058,7 +1121,13 @@ img {
 	}
 
 	.section-eyecatch-title {
-		margin: 0 0 20px;
+		font-size: 28px;
+		margin: 0 0 10px;
+		text-align: center;
+	}
+
+	.section-eyecatch-title-sub {
+		font-size: 24px;
 	}
 
 	.section-eyecatch-text {
@@ -1075,11 +1144,18 @@ img {
 
 	.home-works-list {
 		display: block;
+		padding: 0;
 	}
 
 	.card_wrap {
+		list-style: none;
 		margin: 0 auto;
 		width: 90%;
+	}
+
+	.home-about-list-wrap img {
+		display: block;
+		margin: 0 auto 10px;
 	}
 
 	.crad_img {
@@ -1113,6 +1189,10 @@ img {
 		text-align: left;
 	}
 
+	.contact-form dd {
+		margin: 0;
+	}
+
 	.contact-form input[type='text'],
 	.contact-form input[type='email'],
 	.contact-form textarea {
@@ -1129,11 +1209,12 @@ img {
 
 	.rule-title {
 		font-size: 20px;
+		padding: 10px 0 0 0;
 	}
 
 	.rule-rayout p {
 		font-size: 14px;
-		margin: 0 0 10px 0;
+		padding: 0 10px 10px;
 	}
 
 	.wpcf7-submit {
@@ -1162,6 +1243,74 @@ img {
 		text-align: center;
 		margin: 0;
 		padding: 10px 0;
+	}
+
+	/* 404 */
+	.page-404-sp {
+		font-size: 26px;
+		margin: 0 auto 10px;
+		text-align: center;
+	}
+	.page-404-pc {
+		display: none;
+	}
+
+	.image-404 img {
+		display: block;
+		width: 80vw;
+		margin: 0 auto 10px;
+	}
+
+	.announce-text-404 {
+		text-align: center;
+		margin: 0 20px 10px;
+	}
+
+	.announce-404 p {
+		font-size: 14px;
+		margin: 0 auto;
+	}
+	.move-404 {
+		margin: 0 auto;
+	}
+
+	.move-404-list {
+		margin: 0 auto 20px;
+		padding: 0;
+	}
+
+	.move-404-list li {
+		background: #b4efec;
+		border: #001858 solid 3px;
+		list-style: none;
+		margin: 0 auto;
+		text-align: center;
+		width: 80vw;
+	}
+
+	.move-404-list li a {
+		color: #001858;
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 50px;
+	}
+
+	.top-404 {
+		border-radius: 5px;
+		background: #fef6e4;
+		text-align: center;
+		margin: 0 auto 10px;
+		width: 80vw;
+	}
+
+	.top-nav-404 {
+	}
+
+	.top-404 a {
+		color: #001858;
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 50px;
 	}
 }
 

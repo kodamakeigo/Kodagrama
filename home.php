@@ -28,7 +28,7 @@ get_header(); ?>
         ひとつWebサイトを作成することで、自分の現在の実力を認識し、Web制作を勉強をしてきた証を残すべくこのポートフォリオを作成しました。</p>
 </section>
 
-<section class="about">
+<section class="about" id="about">
     <h2 class="title-home">About</h2>
     <div class="home-about-list-wrap">
         <ul id="js-home-about-list" class="home-about-list">
