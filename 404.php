@@ -14,7 +14,6 @@ get_header(); ?>
         <h1 class="text-404">お探しのページが<br class="sp-section">見つかりませんでした。</h1>
     </header>
 
-
     <div class="page-content">
         <div class="image-404">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/404-image.png" alt="404 Not Found" width="700" height="200" loading="lazy">
