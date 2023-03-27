@@ -11,8 +11,7 @@ get_header(); ?>
 
 <section>
     <header>
-        <h1 class="page-404-pc">お探しのページが見つかりませんでした。</h1>
-        <h1 class="page-404-sp">お探しのページが<br>見つかりませんでした。</h1>
+        <h1 class="text-404">お探しのページが<br class="sp-section">見つかりませんでした。</h1>
     </header>
 
 
