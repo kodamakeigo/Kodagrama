@@ -461,6 +461,7 @@ template {
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 120px;
 }
 
 body {
@@ -523,6 +524,10 @@ img {
 	background: url(./images/arrow-bird.png) no-repeat 0 0 / cover;
 	display: block;
 	position: fixed;
+}
+
+.grecaptcha-badge {
+	visibility: hidden;
 }
 
 /* About */

@@ -16,6 +16,9 @@
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/sp-footer-crab.png" class="sp-footer-crab sp-section" alt="" width="160" height="100" loading="lazy">
     </div>
     <p class="copyright">&copy;kodagrama</p>
+    <p class="global-footer-recaptcha">
+        <small>このサイトはreCAPTCHAによって保護されており、<br class="only-sp"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleのプライバシーポリシー</a>と<a href="https://policies.google.com/terms" target="_blank" rel="noopener">利用規約</a>が適用されます。</small>
+    </p>
 </footer>
 <?php wp_footer(); ?>
 </body>

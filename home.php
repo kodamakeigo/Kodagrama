@@ -51,7 +51,7 @@ get_header(); ?>
         </ul>
     </div>
 </section>
-<section class="works">
+<section class="works" id="works">
     <h2 class="title-home">Works</h2>
     <div class="home-about-list-wrap">
         <ul class="home-works-list">
@@ -76,7 +76,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
     <h2 class="title-home">Contact</h2>
     <div class="home-contact">
         <?php echo do_shortcode('[contact-form-7 id="17" title="お問い合わせフォーム"]'); ?>

@@ -26,9 +26,9 @@ get_header(); ?>
             </div>
             <nav class="move-404">
                 <ul class="move-404-list">
-                    <li><a class="nav-link-404" href="">About</a></li>
-                    <li><a class="nav-link-404" href="">Works</a></li>
-                    <li><a class="nav-link-404" href="">Contact</a></li>
+                    <li><a class="nav-link-404" href="<?php echo esc_url(home_url('/#about')); ?>">About</a></li>
+                    <li><a class="nav-link-404" href="<?php echo esc_url(home_url('/#works')); ?>">Works</a></li>
+                    <li><a class="nav-link-404" href="<?php echo esc_url(home_url('/#contact')); ?>">Contact</a></li>
                 </ul>
             </nav>
             <nav class="top-404">
