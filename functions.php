@@ -150,3 +150,26 @@ function theme_remove_hentry($classes)
 	return $classes;
 }
 add_filter('post_class', 'theme_remove_hentry');
+
+/**
+ * Add Google Analytics tag
+ *
+ * @since 1.0.0
+ */
+function add_head_original_tag()
+{ ?>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TX4ZZESQDS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-TX4ZZESQDS');
+	</script>
+<?php
+}
+add_action('wp_head', 'add_head_original_tag');
