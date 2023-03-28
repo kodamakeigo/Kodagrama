@@ -461,6 +461,7 @@ template {
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 120px;
 }
 
 body {
@@ -525,6 +526,10 @@ img {
 	position: fixed;
 }
 
+.grecaptcha-badge {
+	visibility: hidden;
+}
+
 /* About */
 
 .bx-wrapper {
@@ -580,9 +585,15 @@ img {
 	margin: 0 0 10px 0;
 }
 
-.rule-rayout p {
+.rule-layout p {
 	margin: 0;
 	text-align: left;
+}
+
+/* 404 */
+.text-404 {
+	text-align: center;
+	margin: 20px auto 30px;
 }
 
 /**
@@ -683,7 +694,7 @@ img {
 
 	.pc-footer-crabs {
 		height: auto;
-		margin: 80px 0 80px;
+		margin: 60px 0 40px;
 		width: 60%;
 	}
 
@@ -889,17 +900,18 @@ img {
 		padding: 20px 0 0 0;
 	}
 
-	.rule-rayout {
+	.rule-layout {
 		padding: 0 20px 20px;
 	}
 
-	.rule-rayout p {
+	.rule-layout p {
 		font-size: 20px;
 		margin: 0 0 20px 0;
 		text-align: left;
 	}
 
 	/* 404 */
+
 	.page-404-pc {
 		margin: 40px 0 60px 0;
 		text-align: center;
@@ -925,7 +937,7 @@ img {
 	}
 
 	.move-404 {
-		margin: 0 0 60px 0;
+		margin: 0 0 40px 0;
 	}
 
 	.move-404-list {
@@ -958,6 +970,11 @@ img {
 		background: #001858;
 		color: #b4efec;
 		cursor: pointer;
+	}
+
+	.global-footer-recaptcha {
+		text-align: center;
+		margin: 0;
 	}
 }
 
@@ -1212,7 +1229,7 @@ img {
 		padding: 10px 0 0 0;
 	}
 
-	.rule-rayout p {
+	.rule-layout p {
 		font-size: 14px;
 		padding: 0 10px 10px;
 	}
@@ -1258,12 +1275,12 @@ img {
 	.image-404 img {
 		display: block;
 		width: 80vw;
-		margin: 0 auto 10px;
+		margin: 0 auto 30px;
 	}
 
 	.announce-text-404 {
 		text-align: center;
-		margin: 0 20px 10px;
+		margin: 0 20px 20px;
 	}
 
 	.announce-404 p {
@@ -1282,6 +1299,7 @@ img {
 	.move-404-list li {
 		background: #b4efec;
 		border: #001858 solid 3px;
+		border-radius: 5px;
 		list-style: none;
 		margin: 0 auto;
 		text-align: center;
@@ -1296,14 +1314,12 @@ img {
 	}
 
 	.top-404 {
+		border: #001858 solid 3px;
 		border-radius: 5px;
 		background: #fef6e4;
 		text-align: center;
-		margin: 0 auto 10px;
-		width: 80vw;
-	}
-
-	.top-nav-404 {
+		margin: 0 auto 20px;
+		width: 50vw;
 	}
 
 	.top-404 a {
@@ -1311,6 +1327,14 @@ img {
 		font-size: 24px;
 		font-weight: bold;
 		line-height: 50px;
+	}
+
+	.global-footer-recaptcha {
+		margin: 0 0 10px 10px;
+	}
+
+	.global-footer-recaptcha small a {
+		color: #fef6e4;
 	}
 }
 

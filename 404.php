@@ -11,10 +11,8 @@ get_header(); ?>
 
 <section>
     <header>
-        <h1 class="page-404-pc">お探しのページが見つかりませんでした。</h1>
-        <h1 class="page-404-sp">お探しのページが<br>見つかりませんでした。</h1>
+        <h1 class="text-404">お探しのページが<br class="sp-section">見つかりませんでした。</h1>
     </header>
-
 
     <div class="page-content">
         <div class="image-404">
@@ -26,9 +24,9 @@ get_header(); ?>
             </div>
             <nav class="move-404">
                 <ul class="move-404-list">
-                    <li><a class="nav-link-404" href="">About</a></li>
-                    <li><a class="nav-link-404" href="">Works</a></li>
-                    <li><a class="nav-link-404" href="">Contact</a></li>
+                    <li><a class="nav-link-404" href="<?php echo esc_url(home_url('/#about')); ?>">About</a></li>
+                    <li><a class="nav-link-404" href="<?php echo esc_url(home_url('/#works')); ?>">Works</a></li>
+                    <li><a class="nav-link-404" href="<?php echo esc_url(home_url('/#contact')); ?>">Contact</a></li>
                 </ul>
             </nav>
             <nav class="top-404">
